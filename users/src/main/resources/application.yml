@@ -1,0 +1,14 @@
+server:
+  port: 9001
+
+
+spring:
+  application:
+    name: USERS
+  datasource:
+    url: "jdbc:mysql://localhost:3306/spring_react_crud"
+    username: "root"
+    password: "pass123"
+  jpa:
+    hibernate:
+      ddl-auto: update

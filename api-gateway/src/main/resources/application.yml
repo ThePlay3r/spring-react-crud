@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods: "*"
+      routes:
+        - id: USERS
+          uri: lb://USERS
+          predicates:
+            - Path=/users/**

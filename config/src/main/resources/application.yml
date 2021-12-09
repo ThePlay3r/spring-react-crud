@@ -1,0 +1,12 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: CONFIG
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ThePlay3r/spring-react-crud-config
+          clone-on-start: true
